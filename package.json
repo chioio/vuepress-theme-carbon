@@ -1,0 +1,22 @@
+{
+  "name": "vuepress-theme-carbon",
+  "version": "1.0.0",
+  "description": "Vuepress Theme - Carbon",
+  "repository": "https://github.com/chioio/vuepress-theme-carbon.git",
+  "author": "Tenn Chio",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/@chioio/*",
+    "packages/docs"
+  ],
+  "scripts": {
+    "build": "yarn build:docs",
+    "build:docs": "yarn workspace docs build",
+    "dev": "yarn dev:docs",
+    "dev:docs": "yarn workspace docs dev"
+  },
+  "devDependencies": {
+    "vuepress": "^1.7.1"
+  }
+}

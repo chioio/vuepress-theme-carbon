@@ -1,0 +1,37 @@
+{
+  "name": "@chioio/vuepress-theme-carbon",
+  "version": "1.0.0",
+  "description": "A vuepress theme",
+  "keywords": [
+    "doc",
+    "vue",
+    "vuepress",
+    "theme"
+  ],
+  "homepage": "https://github.com/chioio/vuepress-theme-carbon/blob/master/packages/@chioio/theme#readme",
+  "bugs": {
+    "url": "https://github.com/chioio/vuepress-theme-carbon/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chioio/vuepress-theme-carbon.git",
+    "directory": "packages/@chioio/theme"
+  },
+  "license": "MIT",
+  "author": "Tenn Chio",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "maintainers": [
+    {
+      "name": "Tenn Chio",
+      "email": "Tenn_Chio@icloud.com"
+    }
+  ]
+}
