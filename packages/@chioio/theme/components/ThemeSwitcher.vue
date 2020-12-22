@@ -39,12 +39,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../styles/config.scss';
+
 $switcher-width: 40px;
 $switcher-height: 25px;
 $bar-width: 100%;
 $bar-height: 12px;
 $bar-transition: 0.25s ease-in-out;
-$slider-size: 25px;   // size equals to `$switcher-height`
+$slider-size: 25px; // size equals to `$switcher-height`
 $slider-padding: 4px;
 $slider-transation: 0.5s ease;
 
@@ -90,10 +92,28 @@ $slider-transation: 0.5s ease;
       -webkit-user-drag: none;
     }
     [data-theme='light'] & {
-      transform: translateX(0%);
+      transform: translateX(0%) rotate(90deg);
     }
     [data-theme='dark'] & {
-      transform: translateX($switcher-width - $slider-size);
+      transform: translateX($switcher-width - $slider-size) rotate(0);
+    }
+  }
+}
+
+@media (max-width: $MQMobile) {
+  .theme-switcher {
+    width: $slider-size;
+    overflow: hidden;
+    .bar {
+      display: none;
+    }
+    .slider {
+      [data-theme='light'] & {
+        transform: rotate(90deg);
+      }
+      [data-theme='dark'] & {
+        transform: rotate(0);
+      }
     }
   }
 }
